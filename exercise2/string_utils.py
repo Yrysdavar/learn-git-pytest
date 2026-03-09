@@ -12,7 +12,10 @@ def reverse_string(s: str) -> str:
         The reversed string
     """
     # TODO: Implement this function
-    pass
+    rs= ""
+    for i in reversed(s):
+        rs += i
+    return rs
 
 
 def count_vowels(s: str) -> int:
@@ -27,7 +30,11 @@ def count_vowels(s: str) -> int:
         The number of vowels in the string
     """
     # TODO: Implement this function
-    pass
+    count = 0
+    for char in s:
+        if char in 'aeiou':
+            count += 1
+    return count
 
 
 def is_palindrome(s: str) -> bool:
@@ -43,7 +50,7 @@ def is_palindrome(s: str) -> bool:
         True if the string is a palindrome, False otherwise
     """
     # TODO: Implement this function
-    pass
+    reverse_string(s)
 
 
 def capitalize_words(s: str) -> str:
